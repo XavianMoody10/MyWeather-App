@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/16b96c8656.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>MyWeather App</title>
+  </head>
+  <body>
+    <section class="weather-section">
+      <div class="weather-info-container">
+        <!-- weather location -->
+        <div class="weather-location containers">
+          <div id="search-bar">
+            <input type="text" placeholder="Search State or City" />
+            <button id="search-btn">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </div>
+          <div id="suggestion-Box" class="hidden">
+            <div class="locations-box">
+              <p id="message" class="show-message hidden">NO RESULTS</p>
+            </div>
+          </div>
+
+          <div id="user-location">
+            <p></p>
+            <p></p>
+          </div>
+
+          <div id="date-time">
+            <p>March 7, 2022</p>
+            <p>1:25PM</p>
+          </div>
+        </div>
+
+        <!-- weather conditions -->
+        <div class="weather-condition containers">
+          <div id="weather-info">
+            <img src="" alt="" />
+            <p></p>
+          </div>
+          <div id="conditions-stats">
+            <p>Humidity: <span>0</span>%</p>
+            <p>Wind: <span>0</span> mph</p>
+            <p><span></span>&degF</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="JSFiles/location.js" type="module"></script>
+    <script src="JSFiles/weather.js" type="module"></script>
+    <script src="JSFiles/search.js" type="module"></script>
+  </body>
+</html>
